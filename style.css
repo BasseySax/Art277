@@ -1,138 +1,322 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'poppins' sans-serif;
+   box-sizing: border-box; 
 }
-/* utility */
-.container{
-    width: 90%;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
-}
-
-/* Home Page */
-
-/* header 1 */
-.header-1 h1{
-    margin: 0;
-    color: dimgray;
-    margin-top: 15px;
-    font-size: 45px;
-}
-
-/* navbar */
-header{
-    background-color: darkslategray;
-    min-height: 70px;
-    margin: 0;
-}
-
-.navbar ul{
-    color: white;
-    margin-top: 27px;
-    padding: 0;
-    
+/* Home Section */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),#3551b5), url(bkground.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    position: relative;
 }
 .navbar{
-    margin: 0;
-    
+    display: flex;
+    padding: 40px 120px;
 }
-.navbar ul li{
-    list-style-type: none;
-    display: inline;
+.nav-links{
+    flex: 1;
 }
-
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    transition: 0.4s ease-in-out;
-    
-}
-
-.navbar ul li a:hover{
-    color: turquoise;
-    
-}
-
-/* Banner */
-.banner img{
-    width: 100%;
-    height: 500px;
-}
-
-/* content */
-
-.content img{
-    width: 190px;
-    height: 150px;
+.nav-links ul{
+    margin-left: 50px;
+    display: inline; 
     float: right;
-    margin-bottom: 30px;
+    transition: 0.2s;
+
 }
-.container p{
-    margin: 0;
-    margin-top: 5px;
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 15px;
 }
-.content h2{
-    margin: 0;
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+.nav-links a:hover{
+    color: yellow;
+}
+.logo h2{
+    color: #fff;
+    font-family: cursive;
+}
+.highlight_1{
+    color: blue;
+    
+}
+.wel{
+    margin-top: 100px;
+    text-align: center;
+}
+.wel h1{
+    color: yellow;
+    font-size: 60px;
+    margin-bottom: 10px;
+
+}
+.wel p{
+    color: white;
+    font-size: 25px;
+}
+
+.content{
+    margin-top: 70px;
+    text-align: center;
+    
+}
+.content p{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+.content span{
+    color: yellow;
+}
+.content h5{
+    color: white;
+    margin-bottom: 40px;
+    font-family: 18px;
+}
+.content a{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    font-weight: bolder;
+    transition: 0.2s ease-in-out;
+}
+.content a:hover{
+    background: black;
+    color: gold;
+}
+/* Footer Section */
+footer{
+    background: black;
+    min-height: 150px;
+    border-top: 1px solid gold;
+    color: white;
+    display: flex;
+    padding-left: 190px;
+}
+.footer-section{
+    text-align: center;
+    padding: 15px;
+}
+.footer-section li{
+    list-style-type: none;
+}
+.footer-section a{
+    color: gold;
+}
+.footer-section{
     margin-top: 20px;
 }
-
-/* footer */
-footer{
-    background-color: darkslategray;
-    color: white;
+.footer-section p{
+    margin-bottom: 5px;
 }
-footer h5{
-    font-size: 16px;
+/* Event Section */
+section{
+    width:  100%;
+    overflow: hidden;
+    margin: auto;
+    
 }
-
-/* About Us */
-/* Article */
-article{
-    background-color: rgb(40, 41, 41);
-    min-height: 90px;
-    color: white;
+.image img{
+    border-radius: 3px;
+    border: 1px dotted black;
+    width: 160px;
+    height: 170px;
 }
-article p{
-    padding-top: 20px;
-    font-size: 40px;
+.image{
+    float: left;
+    padding: 15px;
+}
+.flyer h2{
     text-align: center;
+    margin-top: 20px;
+}
+.showcase{
+    width: 45%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.showcase h1{
+    margin-top: 25px;
+}
+.ticket{
+    float: left;
+    padding: 15px;
+}
+.ticket h2{
+    margin-bottom: 5px;
+}
+.ticket p{
+    margin-bottom: 35px;
+}
+.branding p{
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+    margin-bottom: 30px;
+}
+/* Contact Us Section */
+/* Form */
+.main{
+    width: 100%;
+    height: 100vh;
+   
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
+
+.header{
+    margin: 0;
+}
+.header h1{
+    margin-bottom: 20px;
+    color: #fff
+}
+
+/* Gallery Section */
+#gallery{
+    width:  100%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;    
+}
+#gallery h2{
+    margin-bottom: 15px;
     
 }
 
-/* Section */
-
-section h2{
-    text-align: center;
-    margin: 0;
-    margin-top: 30px;
+.past img{
+    border-radius: 3px;
+    border: 1px dotted black;
+    width: 160px;
+    height: 170px;
 }
-section p{
-    margin: 0;
-    padding-top: 5px;
-}
-section img{
-    width: 180px;
-    height: 200px;
+.past{
     float: left;
     padding: 10px;
+    padding-left: 45px;
+    margin-bottom: 100px;
 }
-
-/* Prevention Page */
-main{
-    background-color: rgb(40, 41, 41);
-    min-height: 95px;
-}
-main h4{
+/* video Section */
+.video{
+    margin: auto;
+    overflow: hidden;
     text-align: center;
-    color: white;
-    margin-top: 35px;
-    font-size: 40px;
+    width: 100%;
+    padding-left: 70px;
+    margin-top: 30px;
+}
+.video-content{
+    float: left;
+    padding: 5px;
+    padding-left: 130px;
+    margin-bottom: 60px;
+}
+/* About Us Section */
+.about{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 25px;
+}
+.aim h2{
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.showcase p{
+.myservice{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    
+
+}
+.myservice h2{
+    text-align: center;
     margin-top: 30px;
+    
+}
+.our-services img{
+    width: 50px;
+    border-radius: 100%;
+}
+.our-services{
+    margin: 0;
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+    
 }
